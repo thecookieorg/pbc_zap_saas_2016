@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # pbc-zap project related gems
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
+gem 'devise'
 
 
 # Use ActiveModel has_secure_password

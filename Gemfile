@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem 'devise'
+gem 'devise_invitable', '~> 1.5.2'
 gem 'awesome_print'
 gem 'cancancan', '~> 1.10'
 

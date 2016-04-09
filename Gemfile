@@ -28,6 +28,7 @@ gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem 'devise'
 gem 'awesome_print'
+gem 'cancancan', '~> 1.10'
 
 
 # Use ActiveModel has_secure_password

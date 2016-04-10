@@ -12,9 +12,17 @@
  *
  *= require_tree .
  *= require_self
+ *= require chosen
  */
 .alert{
     z-index: 999;
     position: fixed;
     width: 100%;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }

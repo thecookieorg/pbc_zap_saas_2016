@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require chosen-jquery
 //= require twitter/bootstrap
 //= require turbolinks
-//= require chosen-jquery
 //= require messages
 //= require_tree .

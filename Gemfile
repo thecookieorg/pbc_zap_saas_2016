@@ -30,7 +30,7 @@ gem 'devise'
 gem 'devise_invitable', '~> 1.5.2'
 gem 'awesome_print'
 gem 'cancancan', '~> 1.10'
-
+#gem 'rails_admin'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

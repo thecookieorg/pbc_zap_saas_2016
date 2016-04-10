@@ -8,6 +8,14 @@
 
 			  <div class="form-inputs">
 			    <%= f.input :email, required: true, autofocus: true %>
+			    <%= f.input :accountant_role,:collection => ['Junior Accountant', 'Senior Accountant', 'Manager', 'Partner'], :label => "What is your role?" ,:include_blank => false %>
+			    <%# f.select(:access_level, User.access_levels.keys.map {|access_level| [access_level.titleize,access_level]}) %>
+			    <%# f.input :access_level, collection: User.access_levels.values %>
+			    <%# f.input :access_level, collection: User.access_levels.to_a.map {|k, v| [k, k]}, as: :radio_buttons %>
+			    <%# f.select :access_level, options_for_select(User.access_levels.map {|k,k| [k,k]}) %>
+				<%# f.select :access_level, options_for_select(User.access_levels) %>
+				<%# f.select :body_style, options_for_select(Car.body_styles) %>
+			    <%# f.select :access_level, User.access_levels.to_a.map { |w| [w.humanize, w] } %>
 			    <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
 			    <%= f.input :password_confirmation, required: true %>
 			  </div>

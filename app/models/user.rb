@@ -31,4 +31,5 @@ class User < ActiveRecord::Base
   #end
 
   	has_many :companies
+  	has_many :client_companies
 end

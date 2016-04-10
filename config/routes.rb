@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :client_companies
   devise_for :clients
   get 'dashboards/index'
 

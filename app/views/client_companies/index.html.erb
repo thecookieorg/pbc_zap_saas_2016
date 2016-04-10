@@ -1,0 +1,35 @@
+<h1>Listing Client Companies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Fax</th>
+      <th>Email</th>
+      <th>Website</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @client_companies.each do |client_company| %>
+      <tr>
+        <td><%= client_company.name %></td>
+        <td><%= client_company.address %></td>
+        <td><%= client_company.phone %></td>
+        <td><%= client_company.fax %></td>
+        <td><%= client_company.email %></td>
+        <td><%= client_company.website %></td>
+        <td><%= link_to 'Show', client_company %></td>
+        <td><%= link_to 'Edit', edit_client_company_path(client_company) %></td>
+        <td><%= link_to 'Destroy', client_company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Client company', new_client_company_path %>

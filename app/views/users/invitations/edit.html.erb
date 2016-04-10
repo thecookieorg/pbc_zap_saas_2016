@@ -7,11 +7,7 @@
   <%= f.input :password %>
   <%= f.input :password_confirmation %>
 
-  <%= f.input :partner, 
-          :collection => [[true, 'Yes'], [false, 'No']], 
-          :as => :radio_buttons, 
-          :item_wrapper_class => 'inline',
-          :checked => true %>
+  <%= f.input :accountant_role,:collection => ['Junior Accountant', 'Senior Accountant', 'Manager', 'Partner'], :label => "What is your role?" ,:include_blank => false %>
 
 
   <%= f.button :submit, t("devise.invitations.edit.submit_button") %>
